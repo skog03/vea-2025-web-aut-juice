@@ -55,22 +55,47 @@ export class HomePage extends BasePage {
   }
 
   static get submitButton(){
-    return cy.get("")
+    return cy.get("#submitButton")
+  }
+
+  static get productAmount(){
+    return cy.get("[class='mat-grid-tile ng-star-inserted']")
   }
 
 
+  static get itemsPerPageSelector(){
+    return cy.get('[aria-haspopup="listbox"]');
+  }
 
+  static get select24Button(){
+    return cy.get('#mat-option-1');
+  }
+
+  static get select36Button(){
+    return cy.get('#mat-option-2');
+  }
+
+  static get addToBasketButton(){
+    return cy.get('[aria-label="Add to Basket"]');
+  }
+
+  static get basketButton(){
+    return cy.get('[aria-label="Show the shopping cart"]');
+  }
+
+  static get orderAndPaymentButton(){
+    return cy.get('button[aria-label="Show Orders and Payment Menu"]');
+  }
+
+  static get savedAddressesButton(){
+    return cy.get('[aria-label="Go to saved address page"]');
+  }
+
+  static get paymentsButton(){
+    return cy.get('[aria-label="Go to saved payment methods page"]');
+  }
   
 
-  
-
-  
-  
-
-  
-
-  
-  
   
 
 
